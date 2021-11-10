@@ -42,6 +42,13 @@ body:
     placeholder: Descrivere sinteticamente il risultato ottenuto
   validations:
     required: true
+- type: textarea
+  id: test-cases
+  attributes:
+    label: Casi di test
+    placeholder: Inserire i riferimenti ai casi di test
+  validations:
+    required: true
 - type: input
   id: time-to-find-it-out
   attributes:
