@@ -38,6 +38,13 @@ body:
     placeholder: Descrivere le postcondizioni
   validations:
     required: false
+- type: textarea
+  id: test-cases
+  attributes:
+    label: Casi di test
+    placeholder: Inserire i riferimenti ai casi di test
+  validations:
+    required: true
 - type: checkboxes
   id: specs-completed
   attributes:
