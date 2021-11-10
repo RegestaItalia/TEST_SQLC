@@ -59,10 +59,11 @@ body:
 - type: checkboxes
   id: customer-report
   attributes:
-    label: Difetto segnalato dal cliente?
+    label: Chi ha individuato il difetto?
     description: Indicare se il difetto è stato segnalato dal cliente (oppure intercettato da un test interno)
     options:
-      - label: Difetto segnalato dal cliente?
+      - label: Test interno?
+      - label: Cliente
         required: true
 - type: checkboxes
   id: regression
@@ -70,21 +71,24 @@ body:
     label: Difetto già individuato e risolto in passato?
     description: Indicare se il difetto era già stato individuato e risolto in passato
     options:
-      - label: Difetto già individuato e risolto in passato?
+      - label: Difetto nuovo
+      - label: Difetto già riscontrato in passato
         required: true
 - type: checkboxes
   id: specs-completed
   attributes:
     label: La specifica è completa e compresa in ogni dettaglio?
     options:
-      - label: La specifica è completa e compresa in ogni dettaglio?
+      - label: Specifica completa e compresa
+      - label: Richiesti approfondimenti di analisi
         required: true
 - type: checkboxes
   id: test-case
   attributes:
     label: È stato fornito almeno un caso di test?
     options:
-      - label: È stato fornito almeno un caso di test?
+      - label: Caso di test fornito
+      - label: Caso di test assente
         required: true
 - type: checkboxes
   id: smoke-test
@@ -92,12 +96,14 @@ body:
     label: Smoke-test eseguito con successo?
     description: I test sui casi forniti sono stati superati?
     options:
-      - label: Smoke-test eseguito con successo?
+      - label: Smoke-test da eseguire
+      - label: Smoke-test eseguito con successo
         required: true
 - type: checkboxes
   id: qly-deploy
   attributes:
-    label: Fix deployata nell'ambiente di test?
+    label: Fix deployata per i test?
     options:
-      - label: Fix deployata nell'ambiente di test?
+      - label: Fix da deployare
+      - label: Fix deployata
         required: true
