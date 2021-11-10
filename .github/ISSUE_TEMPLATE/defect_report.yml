@@ -59,51 +59,45 @@ body:
 - type: checkboxes
   id: customer-report
   attributes:
-    label: Chi ha individuato il difetto?
+    label: Difetto segnalato dal cliente?
     description: Indicare se il difetto è stato segnalato dal cliente (oppure intercettato da un test interno)
     options:
-      - label: Test interno?
-      - label: Cliente
-        required: true
+      - label: Difetto segnalato dal cliente?
+        required: false
 - type: checkboxes
   id: regression
   attributes:
     label: Difetto già individuato e risolto in passato?
     description: Indicare se il difetto era già stato individuato e risolto in passato
     options:
-      - label: Difetto nuovo
-      - label: Difetto già riscontrato in passato
-        required: true
+      - label: Difetto già individuato e risolto in passato?
+        required: false
 - type: checkboxes
   id: specs-completed
   attributes:
     label: La specifica è completa e compresa in ogni dettaglio?
     options:
-      - label: Specifica completa e compresa
-      - label: Richiesti approfondimenti di analisi
-        required: true
+      - label: La specifica è completa e compresa in ogni dettaglio?
+        required: false
 - type: checkboxes
   id: test-case
   attributes:
     label: È stato fornito almeno un caso di test?
     options:
-      - label: Caso di test fornito
-      - label: Caso di test assente
-        required: true
+      - label: È stato fornito almeno un caso di test?
+        required: false
 - type: checkboxes
   id: smoke-test
   attributes:
     label: Smoke-test eseguito con successo?
     description: I test sui casi forniti sono stati superati?
     options:
-      - label: Smoke-test da eseguire
-      - label: Smoke-test eseguito con successo
-        required: true
+      - label: Smoke-test eseguito con successo?
+        required: false
 - type: checkboxes
   id: qly-deploy
   attributes:
-    label: Fix deployata per i test?
+    label: Fix deployata nell'ambiente di test?
     options:
-      - label: Fix da deployare
-      - label: Fix deployata
-        required: true
+      - label: Fix deployata nell'ambiente di test?
+        required: false
