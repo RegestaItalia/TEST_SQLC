@@ -1,5 +1,4 @@
 name: DefectReport
-about: Defect Report
 title: "[Difetto]: "
 labels: ["bug", "triage"]
 assignees:
