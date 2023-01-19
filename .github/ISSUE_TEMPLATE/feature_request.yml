@@ -39,6 +39,13 @@ body:
   validations:
     required: false
 - type: textarea
+  id: notes
+  attributes:
+    label: Note
+    placeholder: Inserire eventuali note
+  validations:
+    required: false
+- type: textarea
   id: test-cases
   attributes:
     label: Casi di test
